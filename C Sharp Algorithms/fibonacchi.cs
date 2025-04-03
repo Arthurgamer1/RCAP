@@ -94,21 +94,17 @@ namespace Fibonacchi
                         break;
 
                     case "2":
-                        Console.Write("Enter the number of Fibonacci terms: ");
+                        Console.Write("Enter the nth number to find in the Fibonacci series (Ex. 6 will yield 8): ");
                         if (!int.TryParse(Console.ReadLine(), out n) || n <= 0)
                         {
                             Console.WriteLine("Invalid input. Please enter a positive integer.");
                             break;
                         }
                         Stopwatch stopwatch2 = Stopwatch.StartNew();
-                        for (int i = 0; i < n; i++)
-                        {
-                            fibonacciSeries.Add(FibonacciRecursive(i)); // Adds
-                        }
+                        int fibResult = FibonacciRecursive(n);
                         stopwatch2.Stop();
-                        PrintFibonacciResults(fibonacciSeries);
-                        PrintPerformanceMetrics(stopwatch2);
-                        break;
+
+                        Console.WriteLine($"The number you selected in the series is: {fibResult}\n");
 
                     case "0":
                         Console.WriteLine("Exiting program...");
