@@ -10,7 +10,7 @@ DISCLAIMER: Since we are poor college students with limited time we only explore
 
 ## How to run the code?
 
-Since each folder has a different programming languages not all languages can be run without installing different things.
+Since each folder has a different programming languages not all languages can be run without installing different things, so pleae look at each folder to be able to run the code.
 
 ## Methods
 
